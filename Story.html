@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Slow Fade: Why Ignorance Hurts More Than a Breakup</title>
+    <style>
+        /* --- Modern Font & Basic Setup --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #0056b3;
+            --text-color: #343a40;
+            --secondary-text-color: #6c757d;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --border-color: #dee2e6;
+            --highlight-bg: #e9ecef;
+            --note-bg: #e7f5ff;
+            --note-border: #007bff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* --- Main Content Container --- */
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- Typography & Headings --- */
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.3;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #000;
+            margin-top: 0;
+            border-bottom: 2px solid var(--highlight-bg);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        p, li {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--note-border);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        /* --- Specific Sections & Components --- */
+        .meta-info {
+            display: flex;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--secondary-text-color);
+        }
+        .meta-info span {
+            margin-right: 0.5rem;
+        }
+        .meta-info strong {
+            color: var(--text-color);
+        }
+
+        .infobox {
+            background-color: var(--background-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .infobox .book-cover-placeholder {
+            background-color: var(--highlight-bg);
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-text-color);
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .infobox table {
+            width: 100%;
+            font-size: 0.9rem;
+            border-collapse: collapse;
+        }
+        .infobox td {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .infobox tr:last-child td {
+            border-bottom: none;
+        }
+        .infobox .font-semibold {
+            font-weight: 600;
+            padding-right: 1rem;
+            white-space: nowrap;
+            vertical-align: top;
+        }
+
+        .toc {
+            background-color: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .toc ol {
+            padding-left: 20px;
+        }
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .author-note {
+            background-color: var(--note-bg);
+            border-left: 4px solid var(--note-border);
+            padding: 0.5rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .section-divider {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 3rem 0;
+        }
+        
+        ol, ul {
+            padding-left: 25px;
+        }
+        
+        .reference ul {
+             list-style: none;
+             padding-left: 0;
+        }
+        .reference li {
+            background: #f8f9fa;
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .content {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>The Slow Fade: Why Ignorance Hurts More Than a Breakup</h1>
+        
+        <div class="meta-info">
+            <span>From the book by <strong>Satyam Kumar</strong></span>
+            <span class="mx-2">•</span>
+            <span>Draft 2025</span>
+        </div>
+
+        <div class="infobox">
+            <div class="book-cover-placeholder">Book Cover Image</div>
+            <table>
+                <tr><td class="font-semibold">Author:</td><td>Satyam Kumar</td></tr>
+                <tr><td class="font-semibold">Genre:</td><td>Self-help, Relationships</td></tr>
+                <tr><td class="font-semibold">Draft:</td><td>2025</td></tr>
+                <tr><td class="font-semibold">Pages:</td><td>Approx. 150</td></tr>
+                <tr><td class="font-semibold">ISBN:</td><td>Not available</td></tr>
+            </table>
+        </div>
+
+        <div class="toc">
+            <h3>Contents</h3>
+            <ol>
+                <li><a href="#part1">Part 1: Understanding the Hurt</a>
+                    <ol>
+                        <li><a href="#chapter1">The 'Seen' Tick That Kills</a></li>
+                        <li><a href="#chapter2">The 2-Minute Noodle Breakup vs. The Slow Poison</a></li>
+                    </ol>
+                </li>
+                <li><a href="#part2">Part 2: The Anatomy of a Slow Fade</a>
+                    <ol>
+                        <li><a href="#chapter3">Red Flags You're Ignoring, Yaar!</a></li>
+                        <li><a href="#chapter4">How This Messes With Your Head</a></li>
+                    </ol>
+                </li>
+                <li><a href="#part3">Part 3: Taking Back Control</a>
+                    <ol>
+                        <li><a href="#chapter5">Bhai, Just Talk!</a></li>
+                        <li><a href="#chapter6">The 'Okay, I'm Out' Moment</a></li>
+                        <li><a href="#chapter7">Healing After the Invisible Wound</a></li>
+                    </ol>
+                </li>
+                <li><a href="#conclusion">Conclusion: Your Future, Your Rules</a></li>
+            </ol>
+        </div>
+
+        <div class="author-note">
+            <h3>Author's Note</h3>
+            <p>Hey guys, Satyam here. Look, I'm not some love guru. I don't have a PhD in relationships from a fancy foreign university. I'm just a regular guy from Patna who has seen a thing or two. I've seen my friends get their hearts broken, and honestly, I've had my own share of screw-ups.</p>
+            <p>This book is for anyone who has ever stared at their phone, waiting for a reply that never came. For anyone who has felt that slow, sinking feeling that something is wrong, but you can't put a finger on it.</p>
+            <p>You don't need pills for this pain. You just need a little clarity. And maybe a friend to tell you what's what. Consider this book that friend.</p>
+        </div>
+
+        <h2 id="part1">Part 1: Understanding the Hurt</h2>
+
+        <h3 id="chapter1">Chapter 1: The 'Seen' Tick That Kills</h3>
+        <p>What is ignorance, really? Is it just your girlfriend not picking up your call because she's in a meeting? No, yaar. That's called being busy. We're talking about something deeper.</p>
+        <p>Ignorance is the two blue ticks on WhatsApp, with no reply for six hours.<br>
+        Ignorance is when you're telling them about your horrible day at the office, and they are just scrolling through Instagram, nodding, and saying "hmm."<br>
+        Ignorance is when they make plans with their friends for the weekend, and you find out from a social media post.</p>
+        <p>It's not a single act. It's a pattern. It's a thousand tiny paper cuts that bleed you slowly. It's the feeling of being emotionally invisible to the person who is supposed to see you the most clearly.</p>
+
+        <h3 id="chapter2">Chapter 2: The 2-Minute Noodle Breakup vs. The Slow Poison</h3>
+        <p>Let's be honest. Breakups are horrible. They suck. It feels like someone has taken your heart, put it in a mixer-grinder, and hit the 'pulse' button. You have to deal with crying, angry calls, returning their stupid hoodies, and of course, the big, dramatic 'final talk'. It's a mess.</p>
+        <p>But here's the thing about a mess: you can clean it up.</p>
+        <p>A breakup, for all its drama, is clear. It's a decision. One person says, "It's not working out." The other person cries, shouts, begs, but at the end of the day, the status is 'Single'. It's a full stop. It hurts like hell, but it's a clean wound. You can put a bandage on it and begin the healing process.</p>
+        <p>Ignorance is not a clean wound. It's an infection.</p>
+
+        <div class="section-divider"></div>
+
+        <h2 id="part2">Part 2: The Anatomy of a Slow Fade</h2>
+
+        <h3 id="chapter3">Chapter 3: Red Flags You're Ignoring, Yaar!</h3>
+        <p>So, how do you know if you're in a rough patch or if you're being slowly faded out? It's time for a little quiz. Grab a pen. Be honest.</p>
+        <ol>
+            <li><strong>The Communication Draught:</strong> Has the flood of good morning texts turned into a single 'gm' once a week? Do your calls go unanswered more often than not?</li>
+            <li><strong>The 'I'm Busy' Epidemic:</strong> Is your partner suddenly busy every single weekend? Do they have a new 'project' or 'family function' every time you suggest meeting up?</li>
+            <li><strong>Future Talk is Forbidden:</strong> The last time you tried to talk about the future (even next month's plans), did they change the topic faster than a politician changes sides?</li>
+            <li><strong>You're a Social Media Secret:</strong> Are you still not in their profile picture? Do they post pictures with everyone *but* you?</li>
+            <li><strong>The Effort is Gone:</strong> Remember when they used to plan surprises? Now, do you feel like you're the only one making any effort to keep the conversation going?</li>
+        </ol>
+        <p>If you ticked more than two of these, sorry boss, but you're not in a rough patch. You're on a sinking ship, and your partner has already taken the only lifeboat.</p>
+
+        <h3 id="chapter4">Chapter 4: How This Messes With Your Head</h3>
+        <p>This slow fade isn't just sad; it's mentally destructive. It makes you question everything.</p>
+        <p>Suddenly, you're not the confident, fun-loving person you used to be. You're an amateur detective. You're checking their 'last seen', analyzing their social media likes, and trying to read between the lines of every one-word text. Your brain, which should be thinking about your career or your exams, is now a full-time CBI investigation into your relationship.</p>
+
+        <div class="section-divider"></div>
+
+        <h2 id="part3">Part 3: Taking Back Control</h2>
+
+        <h3 id="chapter5">Chapter 5: Bhai, Just Talk!</h3>
+        <p>I know, I know. Confrontation is scary. It's easier to just wait and hope things get better. But hope is not a strategy, my friend.</p>
+        <p>You need to have 'The Talk'. Not a dramatic, screaming match. Just a simple, honest conversation. Find a quiet time. Don't do it over text. Meet in person if you can, or at least call.</p>
+        <p>And don't start with accusations like, "Why are you ignoring me?!" That will just put them on the defensive. Try this instead. It's the 'I feel' formula. It's magic.</p>
+        <ul>
+            <li>"Hey, I feel like we've been a bit distant lately, and it's making me a little worried. Is everything okay?"</li>
+        </ul>
+
+        <h3 id="chapter6">Chapter 6: The 'Okay, I'm Out' Moment</h3>
+        <p>So you had the talk. And... nothing changed. The one-word replies continue. The canceled plans keep piling up.</p>
+        <p>Now what?</p>
+        <p>Now, my friend, you need to find your self-respect. You need to have your 'Okay, I'm Out' moment. You have to be the one to end it.</p>
+
+        <h3 id="chapter7">Chapter 7: Healing After the Invisible Wound</h3>
+        <p>Healing from this kind of relationship is tricky because you're not just grieving the person; you're grieving what could have been. And you have to do it without any closure from them.</p>
+        <p>So, you have to create your own closure. Here's a simple plan:</p>
+        <ol>
+            <li><strong>The Digital Detox:</strong> Block them. Delete their number. Remove them from all social media. Don't do it for revenge. Do it for your own sanity. Out of sight, out of mind.</li>
+            <li><strong>Reconnect with Your Gang:</strong> Call up those friends you've been ignoring because you were too busy waiting for a text message. Go out. Have a laugh. Remember who you were before this mess started.</li>
+            <li><strong>Find a New Hobby:</strong> Join a gym. Learn the guitar. Start a blog. Do something that makes you feel good about *yourself*.</li>
+        </ol>
+
+        <h2 id="conclusion">Conclusion: Your Future, Your Rules</h2>
+        <p>Look, the point of this whole book is simple. Life is too short to be spent waiting for someone to decide if they value you. A relationship should add to your life, not suck the life out of you.</p>
+        <p>You don't need pills to fix the pain of being ignored. You need courage. The courage to ask the tough questions. The courage to walk away from uncertainty. The courage to choose your own mental peace.</p>
+        <p>A breakup is a door slamming shut. It's loud and shocking. But ignorance is being locked in a room with no doors and no windows. Don't stay in that room. You have the key. You always have.</p>
+
+        <div class="section-divider"></div>
+
+        <div class="reference">
+            <h3>References</h3>
+            <ul>
+                <li>Satyam Kumar. <em>The Slow Fade: Why Ignorance Hurts More Than a Breakup</em>. Self-published, 2025.</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
